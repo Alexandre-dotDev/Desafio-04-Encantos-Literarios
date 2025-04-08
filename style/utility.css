@@ -1,0 +1,13 @@
+.flex{
+  display: flex;
+}
+.grid{
+  display: grid;
+}
+.gap-1{
+  gap: 1rem;
+}
+.center{
+  justify-content: center;
+  align-items: center;
+}

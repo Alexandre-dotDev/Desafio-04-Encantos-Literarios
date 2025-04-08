@@ -9,7 +9,7 @@
   /* COLORS */
   /* Pink */
   --pink-light: #C59DD2;
-  --oink-base: #9547A5;
+  --pink-base: #9547A5;
   --pink-dark: #7D298A;
   --pink-low: #3F0F41;
   /* Blue */
@@ -29,25 +29,49 @@
   --text-label: #BAC6C9;
 
   /* TIPOGRAPH */
-  --ff-Raleway: "Raleway", sans-serif;
-  --title-lg: 700 3rem;
-  --title-md: 700 2.5rem;
-  --title-sm: 700 2rem;
-  --title-xs: 700 1rem;
-  --subtitle: 500 2rem/2;
-  --body-lg-regular: 400 1.25rem/1.2;
-  --body-lg-bold: 700 1.25rem/1.2;
-  --body-md-regular: 400 1rem/1.4;
-  --body-md-bold: 700 1rem/1.4;
-  --body-sm-regular: 400 .875rem/1.4;
-  --body-sm-bold: 700 .875rem/1.4;
-  --body-xs-regular: 400 .75rem/1.4;
-  --body-xs-bold: 700 .75rem/1.4;
-  --button: 700 .875rem;
-  --link: 500 .875rem;
-  --tag: 700 .625rem;
+  --ff-raleway: "Raleway", sans-serif;
+  --title-lg: 700 3rem var(--ff-raleway);
+  --title-md: 700 2.5rem var(--ff-raleway);
+  --title-sm: 700 2rem var(--ff-raleway);
+  --title-xs: 700 1rem var(--ff-raleway);
+  --subtitle: 500 2rem/2 var(--ff-raleway);
+  --body-lg-regular: 400 1.25rem/1.2 var(--ff-raleway);
+  --body-lg-bold: 700 1.25rem/1.2 var(--ff-raleway);
+  --body-md-regular: 400 1rem/1.4 var(--ff-raleway);
+  --body-md-bold: 700 1rem/1.4 var(--ff-raleway);
+  --body-sm-regular: 400 .875rem/1.4 var(--ff-raleway);
+  --body-sm-bold: 700 .875rem/1.4 var(--ff-raleway);
+  --body-xs-regular: 400 .75rem/1.4 var(--ff-raleway);
+  --body-xs-bold: 700 .75rem/1.4 var(--ff-raleway);
+  --button: 700 .875rem var(--ff-raleway);
+  --link: 500 .875rem var(--ff-raleway);
+  --tag: 700 .625rem var(--ff-raleway);
 }
 
 html{
   color: var(--text-body);
+}
+
+body{
+  background-color: #000000;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.container{
+  max-width: 23.4375rem;
+  height: 100vh;
+  margin-inline: auto;
+
+  overflow-x: hidden;
+}
+
+@media (width >= 80em){
+  .container{
+    max-width: 80rem;
+    margin-inline: auto;
+  }
 }
