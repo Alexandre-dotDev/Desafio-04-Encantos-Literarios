@@ -70,8 +70,8 @@
         background: url(../assets/icon/book-mistery.svg) no-repeat
           center/contain;
 
-        animation: disappear 0.5s ease-in 1s forwards;  
-        
+        animation: disappear 0.5s ease-in forwards;
+
         &:hover {
           transform: scale(1.2) rotate(10deg);
           transition: all 0.3s ease-in;
@@ -88,7 +88,7 @@
         background: url(../assets/icon/heart.svg) no-repeat center/contain;
 
         rotate: 355deg;
-        animation: disappear 0.5s ease-in .5s forwards; 
+        animation: disappear 0.5s ease-in forwards;
 
         &:hover {
           transform: scale(1.2) rotate(10deg);
@@ -106,8 +106,8 @@
         background: url(../assets/icon/globo.svg) no-repeat center/contain;
 
         rotate: -5deg;
-        animation: disappear 0.5s ease-in forwards; 
-        
+        animation: disappear 0.5s ease-in forwards;
+
         &:hover {
           transform: scale(1.2) rotate(10deg);
           transition: all 0.3s ease-in;
@@ -121,7 +121,16 @@
 
         & span {
           font-weight: 900;
-          color: var(--blue-light);
+
+          &:nth-child(1) {
+            transition: all 0.25s ease-in;
+          }
+          &:nth-child(2) {
+            transition: all 2s ease-in;
+          }
+          &:nth-child(4) {
+            transition: all 3s ease-in;
+          }
 
           &:nth-child(3) {
             display: none;
@@ -137,6 +146,20 @@
     }
     &:hover .icons:nth-child(3) {
       animation: animation-Appear 0.5s ease-in 2s both;
+    }
+
+    &:hover span:nth-child(1) {
+      color: var(--blue-light);
+      animation: font-Appear 0.5s ease-in both;
+    }
+
+    &:hover span:nth-child(2) {
+      color: var(--blue-light);
+      animation: font-Appear 0.5s ease-in both;
+    }
+    &:hover span:nth-child(4) {
+      color: var(--blue-light);
+      animation: font-Appear 0.5s ease-in both;
     }
   }
 }

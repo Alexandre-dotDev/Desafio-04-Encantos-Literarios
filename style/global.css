@@ -55,8 +55,8 @@ html{
 
 body{
   background-color: #000000;
+  scroll-behavior: smooth;
 }
-
 a{
   text-decoration: none;
   color: inherit;
@@ -68,7 +68,9 @@ a{
   height: 100vh;
   margin-inline: auto;
   background: linear-gradient(180deg, var(--pink-low) , #000000);
+  
   overflow-x: hidden;
+  scrollbar-width: none;
 }
 
 @media (width >= 80em){
