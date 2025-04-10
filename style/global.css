@@ -33,10 +33,11 @@
   --title-lg: 700 3rem var(--ff-raleway);
   --title-md: 700 2.5rem var(--ff-raleway);
   --title-sm: 700 2rem var(--ff-raleway);
+  --title-h1-mobile: 700 1.75rem var(--ff-raleway);
   --title-xs: 700 1rem var(--ff-raleway);
   --subtitle: 500 2rem/2 var(--ff-raleway);
-  --body-lg-regular: 400 1.25rem/1.2 var(--ff-raleway);
-  --body-lg-bold: 700 1.25rem/1.2 var(--ff-raleway);
+  --body-lg-regular: 400 1.25rem/1.4 var(--ff-raleway);
+  --body-lg-bold: 700 1.25rem/1.4 var(--ff-raleway);
   --body-md-regular: 400 1rem/1.4 var(--ff-raleway);
   --body-md-bold: 700 1rem/1.4 var(--ff-raleway);
   --body-sm-regular: 400 .875rem/1.4 var(--ff-raleway);
@@ -62,10 +63,11 @@ a{
 }
 
 .container{
+  position: relative;
   max-width: 23.4375rem;
   height: 100vh;
   margin-inline: auto;
-
+  background: linear-gradient(180deg, var(--pink-low) , #000000);
   overflow-x: hidden;
 }
 
@@ -73,5 +75,7 @@ a{
   .container{
     max-width: 80rem;
     margin-inline: auto;
+    background: linear-gradient(180deg, var(--pink-low) 5%, #000000);
+
   }
 }
