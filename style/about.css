@@ -254,11 +254,11 @@
       }
 
       &:hover .book-purple {
-        transform: rotate(-2deg) scale(1) translate(375px, -4px);
+        transform: rotate(-2deg) scale(1) translate(375px, 40px);
       }
 
       &:hover .book-yellow {
-        transform: rotate(-2deg) scale(1) translate(270px, -100px);
+        transform: rotate(-2deg) scale(1) translate(265px, -50px);
       }
 
       & .pin {
@@ -324,7 +324,7 @@
       }
 
       &:hover .arrow-bookmarks {
-        transform: rotate(0deg) translate(320px, 170px);
+        transform: rotate(0deg) translate(320px, 220px);
       }
 
       & .arrow-pin {
